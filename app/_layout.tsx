@@ -62,7 +62,9 @@ const InitialLayout = () =>{
     const inTabsGroup = segments[0] === '(tabs)'
 
     if(isSignedIn && !inTabsGroup){
-      router.replace('/(tabs)/calls')
+      router.replace('/(tabs)/Chats')
+    }else if(isSignedIn){
+      router.replace('/')
     }
   }, [isSignedIn])
   if (!loaded || !isLoaded) {
@@ -83,6 +85,12 @@ const InitialLayout = () =>{
         name="verify/[phone]"
         options={{
           headerBackTitle: "Edit number",
+        }}
+      />
+        <Stack.Screen
+        name="(tabs)"
+        options={{
+          headerShown:false
         }}
       />
     </Stack>
