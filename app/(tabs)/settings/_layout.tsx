@@ -17,7 +17,7 @@ const Layout = () => {
             placeholder:'Search'
           }
         }}
-      ></Stack.Screen>
+      />
     </Stack>
   );
 };

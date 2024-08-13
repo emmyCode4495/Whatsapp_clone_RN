@@ -33,6 +33,7 @@ const Layout = () => {
     }}/>
     <Tabs.Screen name="calls" options={{
         title:'calls',
+        headerShown:false,
         tabBarIcon:({size, color})=>(
             <CallIcon 
             name="phone-outline"
