@@ -13,7 +13,9 @@ const Layout = () => {
           title: "Calls",
           headerLargeTitle:true,
           headerShadowVisible:false,
-          headerStyle:{backgroundColor:Colors.background},
+          headerBlurEffect:'regular',
+          headerTransparent:true,
+          // headerStyle:{backgroundColor:Colors.background},
           headerSearchBarOptions:{
             placeholder:'Search'
           },
