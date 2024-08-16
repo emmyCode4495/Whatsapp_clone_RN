@@ -50,8 +50,9 @@ const Layout = () => {
             />
         )
     }}/>
-     <Tabs.Screen name="Chats" options={{
+     <Tabs.Screen name="chats" options={{
         title:'Chats',
+        headerShown:false,
         tabBarIcon:({size, color})=>(
             <ChatIcon 
             name="chatbubbles"
